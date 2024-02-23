@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CrD-81-yzf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CrD-81-yzf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,19 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH2-hu-Jjj">
-                                <rect key="frame" x="112" y="488" width="170" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="jzl-US-UGJ"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH2-hu-Jjj">
+                                <rect key="frame" x="92" y="488" width="214" height="99"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSg-xB-GVb">
-                                <rect key="frame" x="92" y="326" width="236" height="83"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSg-xB-GVb">
+                                <rect key="frame" x="81" y="324" width="236" height="83"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="yu7-vI-Kg9"/>
+                                    <constraint firstAttribute="height" constant="83" id="RrS-u0-Hfg"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
@@ -40,12 +37,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IH2-hu-Jjj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="0uH-fp-B5v"/>
-                            <constraint firstItem="SSg-xB-GVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="BBo-pr-zqp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IH2-hu-Jjj" secondAttribute="bottom" constant="284" id="PMs-IT-LuV"/>
-                            <constraint firstItem="SSg-xB-GVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="202" id="RGY-9U-RBM"/>
-                            <constraint firstItem="SSg-xB-GVb" firstAttribute="centerX" secondItem="IH2-hu-Jjj" secondAttribute="centerX" id="Ruw-hH-Awx"/>
-                            <constraint firstItem="SSg-xB-GVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gTV-fZ-35v"/>
+                            <constraint firstItem="IH2-hu-Jjj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="43R-vf-0YM"/>
+                            <constraint firstItem="SSg-xB-GVb" firstAttribute="centerX" secondItem="IH2-hu-Jjj" secondAttribute="centerX" id="6Jw-10-cmW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SSg-xB-GVb" secondAttribute="trailing" constant="76" id="G6x-cs-ECV"/>
+                            <constraint firstItem="SSg-xB-GVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="Jam-Op-lTZ"/>
+                            <constraint firstItem="SSg-xB-GVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="221" id="MR7-8H-hOq"/>
+                            <constraint firstItem="IH2-hu-Jjj" firstAttribute="top" secondItem="SSg-xB-GVb" secondAttribute="bottom" constant="81" id="s9m-Jq-43m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IH2-hu-Jjj" secondAttribute="bottom" constant="231" id="va7-Db-I0j"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vhJ-ex-VR3"/>
@@ -56,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966.15384615384608" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="965.64885496183206" y="3.5211267605633805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qSJ-GJ-SYe">

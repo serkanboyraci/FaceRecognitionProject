@@ -22,7 +22,9 @@ class ViewController: UIViewController {
         
         var error : NSError? // to define error
         
+        // you can change withBiometrics
         if authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+        //if authContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) { // error to pointer you must use &
             
             authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Is it You?") { (success, error) in
                 
@@ -37,18 +39,7 @@ class ViewController: UIViewController {
                     }
                 }
             }
-            
         }
-        
-        
-        
     }
-    
-        
-        
-        
-        
-    
-    
 }
 
